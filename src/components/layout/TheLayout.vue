@@ -1,11 +1,7 @@
 <template>
 <div class="dashboard">
-  <div>
-    <TheHeader 
-      :headerTitle="headerTitle"
-    />
-  </div>
-  <div class="wrapper">
+  <TheHeader />
+  <div class="d-flex">
       <TheNavigation />
       <TheDashboard />
   </div>
@@ -23,7 +19,6 @@ export default {
     TheNavigation,
     TheDashboard
   },
-  props: ['headerTitle']
 }
 </script>
 
@@ -32,9 +27,5 @@ export default {
   position: relative;
   margin-top: 4rem;
   height: calc(100vh - 4rem);
-}
-.wrapper {
-  display: flex;
-  flex-direction: row;
 }
 </style>

@@ -1,12 +1,12 @@
 <template>
     <header>
-      <h3>{{ headerTitle }}</h3>
+      <h3>{{ header }}</h3>
     </header>
 </template>
 
 <script>
 export default {
-  props: ['headerTitle']
+  inject: ['header'],
 }
 </script>
 
@@ -18,7 +18,7 @@ header {
   width: 100%;
   height: 4rem;
   border-bottom: 1px solid rgb(32, 32, 32);
-  color: rgb(18, 146, 146);
+  color: rgb(199, 202, 7);
   display: flex;
   align-items: center;
   padding: 0 2rem;

@@ -15,6 +15,11 @@ export default {
     return {
       headerTitle: 'D5 - Dashboard'
     }
+  },
+  provide() {
+    return {
+      header: this.headerTitle
+    }
   }
 }
 

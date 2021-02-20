@@ -17,11 +17,11 @@ export default {
       links: [
         {
           id: 'link-1',
-          text: 'Dashboard One'
+          text: 'Covid Tracker'
         },
         {
           id: 'link-2',
-          text: 'Dashboard Two'
+          text: 'Crypto Tracker'
         },
       ],
     }
@@ -35,9 +35,9 @@ nav {
   background-color: #252932;
   height: calc(100vh - 4rem);
   color: white;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   box-shadow: 1px 5px 20px 5px rgba(27, 27, 27, 0.315);
-  z-index: -1;
+  z-index: 1;
 }
 
 ul {
@@ -50,6 +50,7 @@ li {
   font-size: 12px;
   line-height: 48px;
   color: grey;
+  padding: 0 0 0 1rem;
 }
 
 li:hover,
@@ -58,6 +59,5 @@ li:active {
   cursor: pointer;
   background-color: #2d313a;
   border-radius: 5px;
-  padding: 0 1rem;
 }
 </style>
