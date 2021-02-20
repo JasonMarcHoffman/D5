@@ -1,19 +1,19 @@
 <template>
-    <TheLandingPage 
-      title="header"
-    />
+  <TheLayout 
+    :headerTitle="headerTitle"
+  />
 </template>
 
 <script>
-import TheLandingPage from './components/UI/TheLandingPage.vue'
+import TheLayout from './components/layout/TheLayout.vue'
 
 export default {
   components: {
-    TheLandingPage
+    TheLayout
   },
   data() {
     return {
-      headerTitle: 'The Header'
+      headerTitle: 'D5 - Dashboard'
     }
   }
 }
@@ -31,5 +31,7 @@ html {
 
 body {
   margin: 0;
+  background-color: #252932;
+  color: grey;
 }
 </style>

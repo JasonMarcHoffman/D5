@@ -1,21 +1,22 @@
 <template>
-  <TheHeader />
-  <TheNavigation />
-  add dashboard canvas
+  <div class="dashboard-container">
+    add dashboard canvas
+  </div>
 </template>
 
 <script>
-import TheHeader from './TheHeader.vue'
-import TheNavigation from './TheNavigation'
 
 export default {
   components: {
-    TheHeader,
-    TheNavigation
-  }  
+
+  },
+  props: ['headerTitle']
 }
 </script>
 
-<style>
-  
+<style scoped>
+.dashboard-container {
+  padding: 1rem;
+  width: 100%;
+}
 </style>
