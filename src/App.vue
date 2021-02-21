@@ -1,7 +1,5 @@
 <template>
-  <TheLayout 
-    :headerTitle="headerTitle"
-  />
+  <TheLayout />
 </template>
 
 <script>
@@ -18,7 +16,7 @@ export default {
   },
   provide() {
     return {
-      header: this.headerTitle
+      header: this.headerTitle,
     }
   }
 }

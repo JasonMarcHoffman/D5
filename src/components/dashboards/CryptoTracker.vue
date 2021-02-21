@@ -1,6 +1,6 @@
 <template>
   <div>
-    Covid Tracker Dashboard
+    Crypto Tracker Dashboard
   </div>
 </template>
 

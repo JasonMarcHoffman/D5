@@ -1,24 +1,22 @@
 <template>
 <div class="dashboard">
   <TheHeader />
-  <div class="d-flex">
-      <TheNavigation />
-      <TheDashboard />
-  </div>
+  <TheDashboard />
 </div>
 </template>
 
 <script>
 import TheHeader from '../UI/TheHeader.vue'
-import TheNavigation from '../UI/TheNavigation.vue'
 import TheDashboard from '../UI/TheDashboard.vue'
 
 export default {
   components: {
     TheHeader,
-    TheNavigation,
     TheDashboard
   },
+  methods: {
+
+  }
 }
 </script>
 

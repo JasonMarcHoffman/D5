@@ -1,11 +1,8 @@
-// This is a dummy navigation component, create router-link down the line
-
 <template>
   <nav>
     <ul>
-      <li v-for="link in links" :key="link.id">
-        {{ link.text }}
-      </li>
+      <li @click="covidDash" :class="{active: covidSelected === true}">Covid Dashboard</li>
+      <li @click="cryptoDash" :class="{active: cryptoSelected === true}">Crypto Dashboard</li>
     </ul>
   </nav>
 </template>
@@ -14,26 +11,29 @@
 export default {
   data() {
     return {
-      links: [
-        {
-          id: 'link-1',
-          text: 'Covid Tracker'
-        },
-        {
-          id: 'link-2',
-          text: 'Crypto Tracker'
-        },
-      ],
+      covidSelected: false,
+      cryptoSelected: false
     }
+  },
+  methods: {
+    covidDash() {
+      this.$emit('covidDash')
+      this.covidSelected = true
+      this.cryptoSelected = false
+    },
+    cryptoDash() {
+      this.$emit('cryptoDash')
+      this.cryptoSelected = true
+      this.covidSelected = false
+    },
   }
 }
 </script>
 
 <style scoped>
 nav {
-  width: 16%;
+  width: 200px;
   background-color: #252932;
-  height: calc(100vh - 4rem);
   color: white;
   padding: 2rem 1rem;
   box-shadow: 1px 5px 20px 5px rgba(27, 27, 27, 0.315);
@@ -51,10 +51,11 @@ li {
   line-height: 48px;
   color: grey;
   padding: 0 0 0 1rem;
+  margin-bottom: 12px;
 }
 
 li:hover,
-li:active {
+.active {
   color: grey;
   cursor: pointer;
   background-color: #2d313a;
