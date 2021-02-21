@@ -6,22 +6,22 @@
     />
     
     <div class="dashboard-canvas">
-      <CovidTracker v-if="showComponent === 'covid-tracker'" />
-      <CryptoTracker v-else-if="showComponent === 'crypto-tracker'" />
+      <CovidTrackerDashboard v-if="showComponent === 'covid-tracker'" />
+      <CryptoTrackerDashboard v-else-if="showComponent === 'crypto-tracker'" />
     </div>
   </div>
 </template>
 
 <script>
 import TheNavigation from './TheNavigation.vue'
-import CovidTracker from '../dashboards/CovidTracker.vue'
-import CryptoTracker from '../dashboards/CryptoTracker.vue'
+import CovidTrackerDashboard from '../dashboards/CovidTrackerDashboard.vue'
+import CryptoTrackerDashboard from '../dashboards/CryptoTrackerDashboard.vue'
 
 export default {
   components: {
     TheNavigation,
-    CovidTracker,
-    CryptoTracker
+    CovidTrackerDashboard,
+    CryptoTrackerDashboard
   },
   data() {
     return {
@@ -48,7 +48,6 @@ export default {
 }
 
 .dashboard-canvas {
-  border: 1px solid red;
   width: 100%;
 }
 </style>

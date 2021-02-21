@@ -32,11 +32,11 @@ export default {
 
 <style scoped>
 nav {
-  width: 200px;
+  min-width: 210px;
   background-color: #252932;
   color: white;
   padding: 2rem 1rem;
-  box-shadow: 1px 5px 20px 5px rgba(27, 27, 27, 0.315);
+  box-shadow: 1px 5px 20px 5px #1b1b1b50;
   z-index: 1;
 }
 
@@ -56,7 +56,7 @@ li {
 
 li:hover,
 .active {
-  color: grey;
+  color: white;
   cursor: pointer;
   background-color: #2d313a;
   border-radius: 5px;

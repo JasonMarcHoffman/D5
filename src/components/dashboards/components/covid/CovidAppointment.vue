@@ -1,7 +1,8 @@
 <template>
-  <div>
-    Covid Tracker Dashboard
-  </div>
+  <base-card>
+      <h5>Appointment details</h5>
+      <hr>
+  </base-card>
 </template>
 
 <script>
@@ -12,6 +13,6 @@ export default {
 
 <style scoped>
 div {
-  padding: 1rem;
+  width: 100%;
 }
 </style>
